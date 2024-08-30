@@ -90,7 +90,7 @@ class Wiki {
         try {
             const response = await (
                 await fetch(
-                    `${location.protocol}//${location.host}${Constants.scriptPath}/index.php?oldid=${revisionId}&section=${section}&action=raw`
+                    `${location.protocol}//${location.host}${Constants.scriptPath}/index.php?title=${title}&section=${section}&action=raw`
                 )
             ).text();
             return response;
